@@ -27,6 +27,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "bard"
+  spec.add_dependency "bard-api"
   spec.add_dependency "bard-rake"
   spec.add_dependency "bard-static"
   spec.add_dependency "bard-staging_banner"

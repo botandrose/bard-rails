@@ -7,4 +7,4 @@ require "labelled_form"
 require "slim-rails"
 require "bard-file_field"
 require "rack-disable_css_animations" if Rails.env.test?
-
+require "bard/rails/railtie"
