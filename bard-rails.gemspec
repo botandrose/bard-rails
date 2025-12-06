@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency "bard-static"
   spec.add_dependency "bard-staging_banner"
   spec.add_dependency "bard-file_field"
+  spec.add_dependency "bard-tag_field"
   spec.add_dependency "slim-rails"
   spec.add_dependency "labelled_form"
   spec.add_dependency "rack-disable_css_animations"
