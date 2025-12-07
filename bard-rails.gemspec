@@ -4,7 +4,7 @@ require_relative "lib/bard/rails/version"
 
 Gem::Specification.new do |spec|
   spec.name = "bard-rails"
-  spec.version = Bard::RailsVERSION
+  spec.version = Bard::RailsGem::VERSION
   spec.authors = ["Micah Geisel"]
   spec.email = ["micah@botandrose.com"]
 

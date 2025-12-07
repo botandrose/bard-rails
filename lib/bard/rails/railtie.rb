@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
 require "rails/railtie"
-require "bard-api"
 
 module Bard
-  module Rails
+  module RailsGem
     class Railtie < ::Rails::Railtie
       initializer "bard-rails.mount_api" do |app|
         app.routes.prepend do
-          mount Bard::Api::Engine => "/bard"
+          mount Bard::Api::App.new => "/bard"
         end
       end
     end
