@@ -1,21 +1,12 @@
-name: Ruby
-
-on:
-  push:
-    branches:
-      - master
-
-  pull_request:
-
+name: CI
+on: [push, pull_request]
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
+  test:
     strategy:
       matrix:
-        ruby:
-          - 3.0.3
+        ruby: [ "3.3", "3.4", "4.0" ]
 
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby

@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Metagem that includes all the gems common to all Rails project by BARD."
   spec.homepage = "https://github.com/botandrose/bard-rails"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.0.0"
+  spec.required_ruby_version = ">= 3.3.0"
 
   spec.metadata["homepage_uri"] = spec.homepage
 
