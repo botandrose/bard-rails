@@ -2,6 +2,6 @@
 
 module Bard
   module RailsGem # avoid messing with the "Rails" module name
-    VERSION = "0.3.1"
+    VERSION = "0.3.2"
   end
 end
