@@ -3,6 +3,7 @@
 require "bard-rake"
 require "bard-static"
 require "bard-staging_banner"
+require "bard-sass"
 require "labelled_form"
 require "slim-rails"
 require "bard-file_field"

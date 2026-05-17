@@ -26,13 +26,16 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "bard"
+  spec.add_dependency "bard", ">1"
+  spec.add_dependency "bard-new"
+  spec.add_dependency "bard-backup"
   spec.add_dependency "bard-api"
   spec.add_dependency "bard-rake"
   spec.add_dependency "bard-static"
   spec.add_dependency "bard-staging_banner"
-  spec.add_dependency "bard-file_field"
+  spec.add_dependency "bard-attachment_field"
   spec.add_dependency "bard-tag_field"
+  spec.add_dependency "bard-sass"
   spec.add_dependency "slim-rails"
   spec.add_dependency "labelled_form"
   spec.add_dependency "rack-disable_css_animations"
