@@ -26,8 +26,6 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "bard", ">1"
-  spec.add_dependency "bard-new"
   spec.add_dependency "bard-backup"
   spec.add_dependency "bard-api"
   spec.add_dependency "bard-rake"
@@ -39,7 +37,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency "slim-rails"
   spec.add_dependency "labelled_form"
   spec.add_dependency "rack-disable_css_animations"
-
-  # For more information and examples about making a new gem, checkout our
-  # guide at: https://bundler.io/guides/creating_gem.html
 end
