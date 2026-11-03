@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "bard-backup"
+  spec.add_dependency "bard-backup", ">= 0.15.2"
   spec.add_dependency "bard-api"
   spec.add_dependency "bard-rake"
   spec.add_dependency "bard-static"

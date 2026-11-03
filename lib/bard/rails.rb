@@ -10,4 +10,5 @@ require "bard-tag_field"
 require "bard-attachment_field"
 require "rack-disable_css_animations" if Rails.env.test?
 require "bard/api"
+require "bard/backup/railtie"
 require "bard/rails/railtie"
