@@ -5,6 +5,7 @@
 * bard: CLI tool for deployment and etc
 * bard-rake: rake tasks for testing and db management
 * bard-static: zero-conf static pages and mockups
+* bard-exception_notification: exception emails from web requests, jobs, and rake tasks, plus `rake exception_notification:test`
 * bard-staging_banner: visual page annotation for staging environment, including links to view "sent" emails
 * bard-file_field: a modern replacement for <input type="file">
 * slim-rails: our preferred templating language

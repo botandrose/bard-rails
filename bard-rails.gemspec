@@ -28,6 +28,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "bard-backup", ">= 0.15.2"
   spec.add_dependency "bard-api"
+  spec.add_dependency "bard-exception_notification", ">= 0.2"
   spec.add_dependency "bard-rake"
   spec.add_dependency "bard-static"
   spec.add_dependency "bard-staging_banner"

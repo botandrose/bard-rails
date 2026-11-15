@@ -2,6 +2,7 @@
 
 require "bard-rake"
 require "bard-static"
+require "bard-exception_notification"
 require "bard-staging_banner"
 require "bard-sass"
 require "labelled_form"
