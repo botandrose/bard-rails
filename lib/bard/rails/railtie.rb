@@ -13,6 +13,10 @@ module Bard
           end
         end
       end
+
+      initializer "bard-rails.isolate_test_storage" do
+        require "bard/rails/test_storage" if ::Rails.env.test?
+      end
     end
   end
 end
