@@ -12,6 +12,25 @@
 * labelled_form: some nice label shortcuts for the Rails form builder
 * rack-disable_css_animations: automatically remove CSS animations in the test environment, for more reliable tests
 
+## Choosing how to restart Puma on deploy
+
+A phased restart (USR1) has no user impact, but it keeps the Puma master, so it can't pick up a new Ruby, a new Puma, a changed `config/puma.rb`, or a new version of any gem the master loaded. To let the master record what it booted with, add this to `config/puma.rb`:
+
+```ruby
+extra_runtime_dependencies ["bard-rails"]
+plugin :bard_rails
+```
+
+Then ask which restart the deploy needs:
+
+```ruby
+case Bard::RailsGem::PumaManifest.restart_kind
+when :full then sh "systemctl --user restart app.target" # new Ruby, or no manifest yet
+when :hot then sh "bin/server restart"                   # the master holds something that changed
+when :phased then sh "systemctl --user reload app.target"
+end
+```
+
 ## Installation
 
 Add this line to your application's Gemfile:
