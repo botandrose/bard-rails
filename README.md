@@ -24,6 +24,8 @@ plugin :bard_rails
 Then ask which restart the deploy needs:
 
 ```ruby
+require "bard/rails/puma_manifest"
+
 case Bard::RailsGem::PumaManifest.restart_kind
 when :full then sh "systemctl --user restart app.target" # new Ruby, or no manifest yet
 when :hot then sh "bin/server restart"                   # the master holds something that changed
